@@ -1,8 +1,11 @@
 ## Word Generator
-import random
 import string
+import random
 
 class WordGenerator():
+    ''' Class for generating random words '''
+
+
     def __init__(self):
         '''Initialization of words generator
             Loads a file of english words and parses it to a list of words

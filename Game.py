@@ -1,5 +1,5 @@
 ## Hangman game
-## Probe your lexical skill trying to beat the Hangman
+## Probe your lexical skills trying to beat the Hangman
 ## Created by Kelvin Rodriguez
 
 ## Import libraries
@@ -9,9 +9,10 @@ import os
 from Hangman import *
 from WordGenerator import *
 
-
+# Game Class
 class Game():
     '''Class for playing the game'''
+
 
     def tryAgain(self):
         '''Request if the player wants to play again or not
@@ -25,6 +26,7 @@ class Game():
                 return False
             else:
                 print "I didn't get that"
+
 
     def Play(self,hangman):
         '''hangman: hangman object to play with
@@ -90,6 +92,7 @@ class Game():
                 else:
                     print "OOhh!! Sorry, that one wasn't in the word"
 
+
     ## Start the game
     def Start(self, diff = 0):
         '''diff: difficulty, lenght of the word from 2 to 10 otherwise random
@@ -104,6 +107,3 @@ class Game():
             # Start game and wait for response
             play = self.Play(h)
         print "Thank you for playing"
-    
-# Start game                    
-Game().Start()
